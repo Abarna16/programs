@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int a[]={1,4,5,9,10,40,50,90,100,400,500,900,1000};
+    char b[][100]={"I","IV","V","IX","X","XL","L","XC","C","CD","D","DM","M"};
+    int k=12,n,q,c=0;
+    scanf("%d",&n);
+    while(n>0)
+    {
+      q=n/a[k];
+     
+      n=n%a[k];
+      while(q)
+      {
+        printf("%s",b[k]);
+        q--;
+      }
+      k--;
+    }
+  return 0;
+}
